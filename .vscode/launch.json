@@ -5,11 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch Localhost:5500",
-            "port": 9222,
+            "name": "Launch Chrome",
             "request": "launch",
-            "type": "chrome",
-            "url":"http://localhost:5500/",
+            "type": "pwa-chrome",
+            "url": "http://localhost:5500",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "name": "Launch Firefox",
+            "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}"
         }
     ]
